@@ -15,14 +15,29 @@ struct CoursForm: View {
     var body: some View {
         #if canImport(UIKit)
         NavigationView {
-            form()
-                .navigationBarTitle(modelCours.updateData == nil ? "Ajouter un cour" : "Modifier un cour")
-                .navigationBarItems(leading: Button(action: {
-                    modelCours.isNewData.toggle()
-                    modelCours.clear()
-                }, label: {
-                    Text("Annuler")
-                }))
+            Form {
+                HStack{
+                    Text("Nom :")
+                    TextField(NSLocalizedString("Entrer le nom du cour ici", comment: "Textfield placeholder"), text: $modelCours.intitule)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                }
+                
+                HStack {
+                    Button(action: { modelCours.addCours(context: context) }, label: {
+                        Text(modelCours.updateData == nil ? "Ajouter un cour" : "Modifier un cour")
+                    })
+                    .padding(10)
+                    .disabled(modelCours.intitule == "")
+                }
+            }
+            .navigationBarItems(leading: Button(action: {
+                modelCours.isNewData.toggle()
+                modelCours.updateData = nil
+            }) {
+                Text("Annuler")
+            })
+            .navigationBarTitle(modelCours.updateData == nil ? "Ajouter un cour" : "Modifier un cour")
         }
         #elseif os(OSX)
         form()
@@ -49,10 +64,6 @@ struct CoursForm: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.vertical)
             }
-            
-            #if canImport(UIKit)
-            menu()
-            #endif
         }
     }
     

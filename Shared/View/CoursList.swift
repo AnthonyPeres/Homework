@@ -27,7 +27,19 @@ struct CoursList: View {
             }
         }
         .listStyle(PlainListStyle())
-        .navigationBarTitle(Text("Matières").font(.title2))
+        .toolbar(content: {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Text("Matières")
+                    .font(.largeTitle)
+                    .bold()
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                EditButton()
+            }
+        })
+        
+        
         
         #elseif os(OSX)
         List {
@@ -54,7 +66,11 @@ struct CoursList: View {
     
     
     private func row(forCours cour: Cours) -> some View {
-        Text(cour.wrappedIntitule)
+        NavigationLink(
+            destination: Text("Destination"),
+            label: {
+                Text(cour.wrappedIntitule)
+            })
     }
     
     private func deleteCours(offsets: IndexSet) {
