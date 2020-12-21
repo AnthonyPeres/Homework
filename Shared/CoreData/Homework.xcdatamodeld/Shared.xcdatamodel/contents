@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cours" representedClassName=".Cours" syncable="YES">
+        <attribute name="intitule" attributeType="String" defaultValueString="Intitulé null"/>
+        <relationship name="taches" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Taches" inverseName="cour" inverseEntity="Taches"/>
+    </entity>
+    <entity name="Taches" representedClassName=".Taches" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="intitule" attributeType="String" defaultValueString="Intitulé null"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="termine" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="cour" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cours" inverseName="taches" inverseEntity="Cours"/>
+        <relationship name="tachemere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Taches" inverseName="tachesfilles" inverseEntity="Taches"/>
+        <relationship name="tachesfilles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Taches" inverseName="tachemere" inverseEntity="Taches"/>
+    </entity>
+    <elements>
+        <element name="Cours" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Taches" positionX="-54" positionY="-9" width="128" height="149"/>
+    </elements>
+</model>
