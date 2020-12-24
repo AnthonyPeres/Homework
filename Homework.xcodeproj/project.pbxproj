@@ -45,6 +45,13 @@
 		DA5BCABB2592B1A200353F59 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAB92592B1A200353F59 /* CategoriesList.swift */; };
 		DA5BCAC52592B32900353F59 /* CategoriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAC42592B32900353F59 /* CategoriesRow.swift */; };
 		DA5BCAC62592B32900353F59 /* CategoriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAC42592B32900353F59 /* CategoriesRow.swift */; };
+		DAC579232594CE8F00F9BFB6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3CC2802594B91300A23B34 /* WidgetKit.framework */; };
+		DAC579242594CE8F00F9BFB6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3CC2822594B91300A23B34 /* SwiftUI.framework */; };
+		DAC579272594CE8F00F9BFB6 /* HomeworkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC579262594CE8F00F9BFB6 /* HomeworkWidget.swift */; };
+		DAC5792A2594CE9100F9BFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC579292594CE9100F9BFB6 /* Assets.xcassets */; };
+		DAC5792C2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */; };
+		DAC5792D2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */; };
+		DAC579302594CE9100F9BFB6 /* HomeworkWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,13 @@
 			remoteGlobalIDString = DA200F6B259154DF00AB043D;
 			remoteInfo = "Homework (macOS)";
 		};
+		DAC5792E2594CE9100F9BFB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA200F55259154DE00AB043D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC579212594CE8F00F9BFB6;
+			remoteInfo = HomeworkWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +85,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				DAC579302594CE9100F9BFB6 /* HomeworkWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +135,7 @@
 		DA200FD625915CC200AB043D /* TachesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TachesViewModel.swift; sourceTree = "<group>"; };
 		DA200FDF25915DFF00AB043D /* CoursForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursForm.swift; sourceTree = "<group>"; };
 		DA200FEA2591641B00AB043D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA28E4D62594CF08008725D7 /* HomeworkWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeworkWidgetExtension.entitlements; sourceTree = "<group>"; };
 		DA3CC2802594B91300A23B34 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		DA3CC2822594B91300A23B34 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		DA5BCA852592A85500353F59 /* TachesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachesRow.swift; sourceTree = "<group>"; };
@@ -129,6 +145,11 @@
 		DA5BCAAA2592B0C500353F59 /* CoursDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursDetail.swift; sourceTree = "<group>"; };
 		DA5BCAB92592B1A200353F59 /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 		DA5BCAC42592B32900353F59 /* CategoriesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRow.swift; sourceTree = "<group>"; };
+		DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeworkWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC579262594CE8F00F9BFB6 /* HomeworkWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkWidget.swift; sourceTree = "<group>"; };
+		DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HomeworkWidget.intentdefinition; sourceTree = "<group>"; };
+		DAC579292594CE9100F9BFB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC5792B2594CE9100F9BFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +181,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC5791F2594CE8F00F9BFB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC579242594CE8F00F9BFB6 /* SwiftUI.framework in Frameworks */,
+				DAC579232594CE8F00F9BFB6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -171,6 +201,7 @@
 				DA200F6D259154DF00AB043D /* macOS */,
 				DA200F77259154DF00AB043D /* Tests iOS */,
 				DA200F82259154DF00AB043D /* Tests macOS */,
+				DAC579252594CE8F00F9BFB6 /* HomeworkWidget */,
 				DA3CC27F2594B91300A23B34 /* Frameworks */,
 				DA200F65259154DF00AB043D /* Products */,
 			);
@@ -197,6 +228,7 @@
 				DA200F6C259154DF00AB043D /* Homework.app */,
 				DA200F74259154DF00AB043D /* Tests iOS.xctest */,
 				DA200F7F259154DF00AB043D /* Tests macOS.xctest */,
+				DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,6 +320,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DAC579252594CE8F00F9BFB6 /* HomeworkWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DAC579262594CE8F00F9BFB6 /* HomeworkWidget.swift */,
+				DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */,
+				DA28E4D62594CF08008725D7 /* HomeworkWidgetExtension.entitlements */,
+				DAC579292594CE9100F9BFB6 /* Assets.xcassets */,
+				DAC5792B2594CE9100F9BFB6 /* Info.plist */,
+			);
+			path = HomeworkWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +348,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DAC5792F2594CE9100F9BFB6 /* PBXTargetDependency */,
 			);
 			name = "Homework (iOS)";
 			productName = "Homework (iOS)";
@@ -364,6 +409,23 @@
 			productReference = DA200F7F259154DF00AB043D /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DAC579212594CE8F00F9BFB6 /* HomeworkWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC579332594CE9100F9BFB6 /* Build configuration list for PBXNativeTarget "HomeworkWidgetExtension" */;
+			buildPhases = (
+				DAC5791E2594CE8F00F9BFB6 /* Sources */,
+				DAC5791F2594CE8F00F9BFB6 /* Frameworks */,
+				DAC579202594CE8F00F9BFB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeworkWidgetExtension;
+			productName = HomeworkWidgetExtension;
+			productReference = DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -387,6 +449,9 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = DA200F6B259154DF00AB043D;
 					};
+					DAC579212594CE8F00F9BFB6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = DA200F58259154DE00AB043D /* Build configuration list for PBXProject "Homework" */;
@@ -406,6 +471,7 @@
 				DA200F6B259154DF00AB043D /* Homework (macOS) */,
 				DA200F73259154DF00AB043D /* Tests iOS */,
 				DA200F7E259154DF00AB043D /* Tests macOS */,
+				DAC579212594CE8F00F9BFB6 /* HomeworkWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -441,6 +507,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC579202594CE8F00F9BFB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC5792A2594CE9100F9BFB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -464,6 +538,7 @@
 				DA5BCAC52592B32900353F59 /* CategoriesRow.swift in Sources */,
 				DA200FD725915CC200AB043D /* CoursViewModel.swift in Sources */,
 				DA5BCA8D2592A9B600353F59 /* TachesForm.swift in Sources */,
+				DAC5792D2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */,
 				DA5BCAAB2592B0C500353F59 /* CoursDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +583,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC5791E2594CE8F00F9BFB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC5792C2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */,
+				DAC579272594CE8F00F9BFB6 /* HomeworkWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -520,6 +604,11 @@
 			isa = PBXTargetDependency;
 			target = DA200F6B259154DF00AB043D /* Homework (macOS) */;
 			targetProxy = DA200F80259154DF00AB043D /* PBXContainerItemProxy */;
+		};
+		DAC5792F2594CE9100F9BFB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC579212594CE8F00F9BFB6 /* HomeworkWidgetExtension */;
+			targetProxy = DAC5792E2594CE9100F9BFB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -823,6 +912,55 @@
 			};
 			name = Release;
 		};
+		DAC579312594CE9100F9BFB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HomeworkWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67RY5Y2X43;
+				INFOPLIST_FILE = HomeworkWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.PeresdaCruz.Homework.HomeworkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC579322594CE9100F9BFB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HomeworkWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67RY5Y2X43;
+				INFOPLIST_FILE = HomeworkWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.PeresdaCruz.Homework.HomeworkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -867,6 +1005,15 @@
 			buildConfigurations = (
 				DA200F9C259154DF00AB043D /* Debug */,
 				DA200F9D259154DF00AB043D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC579332594CE9100F9BFB6 /* Build configuration list for PBXNativeTarget "HomeworkWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC579312594CE9100F9BFB6 /* Debug */,
+				DAC579322594CE9100F9BFB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
