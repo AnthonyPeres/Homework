@@ -28,12 +28,6 @@ struct CoursList: View {
         }
         .listStyle(PlainListStyle())
         .toolbar(content: {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Text("Matières")
-                    .font(.largeTitle)
-                    .bold()
-            }
-            
             ToolbarItem(placement: .navigationBarTrailing) {
                 EditButton()
             }
@@ -67,9 +61,9 @@ struct CoursList: View {
     
     private func row(forCours cour: Cours) -> some View {
         NavigationLink(
-            destination: Text("Destination"),
+            destination: CoursDetail(cour: cour),
             label: {
-                Text(cour.wrappedIntitule)
+                CoursRow(cour: cour)
             })
     }
     

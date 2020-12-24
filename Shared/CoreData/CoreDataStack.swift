@@ -25,7 +25,7 @@ struct CoreDataStack {
         if inMemory {
             container.persistentStoreDescriptions = [.init(url: URL(fileURLWithPath: "/dev/null"))]
         } else {
-//            container.persistentStoreDescriptions = [.init(url: .storeURL(for: "group.Anthony.PeresdaCruz.Homework", databaseName: "primary"))]
+            container.persistentStoreDescriptions = [.init(url: .storeURL(for: "group.Anthony.PeresdaCruz.Homework", databaseName: "primary"))]
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {

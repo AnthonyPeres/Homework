@@ -19,7 +19,16 @@ struct ContentView: View {
         #if canImport(UIKit)
         NavigationView {
             VStack {
-//                CategoriesList()
+                CategoriesList()
+                
+                HStack {
+                    Text("Par matières")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding()
+                    Spacer()
+                }
+                
                 CoursList()
                 
                 Spacer()
@@ -32,8 +41,9 @@ struct ContentView: View {
                             .font(.system(size: 18, weight: .medium, design: .default))
                     }
                     .sheet(isPresented: $modelTaches.isNewData, content: {
-//                        TachesForm(modelTaches: modelTaches)
-//                            .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
+                        TachesForm(modelTaches: modelTaches)
+                            // Dans les .sheet on perd l'environement donc il faut le rappeler
+                            .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
                     })
                     
                     Spacer()
@@ -50,10 +60,14 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
             }
+//            .navigationBarItems(trailing: EditButton())
+            .navigationBarTitle("Mes cours", displayMode: .large)
         }
         #elseif os(OSX)
         NavigationView {
             VStack {
+                CategoriesList()
+                Divider()
                 CoursList()
                 Spacer()
                 
@@ -77,8 +91,8 @@ struct ContentView: View {
                 Image(systemName: "plus")
             })
             .sheet(isPresented: $modelTaches.isNewData, content: {
-//                TachesForm(modelTaches: modelTaches)
-//                    .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+                TachesForm(modelTaches: modelTaches)
+                    .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
             })
         })
         .toolbar(content: {
