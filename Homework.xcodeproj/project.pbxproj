@@ -45,6 +45,7 @@
 		DA5BCABB2592B1A200353F59 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAB92592B1A200353F59 /* CategoriesList.swift */; };
 		DA5BCAC52592B32900353F59 /* CategoriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAC42592B32900353F59 /* CategoriesRow.swift */; };
 		DA5BCAC62592B32900353F59 /* CategoriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAC42592B32900353F59 /* CategoriesRow.swift */; };
+		DA84D6652597445600D61722 /* HomeworkWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84D6642597445600D61722 /* HomeworkWidgetView.swift */; };
 		DAC579232594CE8F00F9BFB6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3CC2802594B91300A23B34 /* WidgetKit.framework */; };
 		DAC579242594CE8F00F9BFB6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3CC2822594B91300A23B34 /* SwiftUI.framework */; };
 		DAC579272594CE8F00F9BFB6 /* HomeworkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC579262594CE8F00F9BFB6 /* HomeworkWidget.swift */; };
@@ -52,6 +53,10 @@
 		DAC5792C2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */; };
 		DAC5792D2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */; };
 		DAC579302594CE9100F9BFB6 /* HomeworkWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAEAD2372594DAFC00F6A938 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FA6259155A300AB043D /* CoreDataStack.swift */; };
+		DAEAD2382594DAFC00F6A938 /* Cours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FB6259155E100AB043D /* Cours.swift */; };
+		DAEAD2392594DAFC00F6A938 /* Taches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FB5259155E100AB043D /* Taches.swift */; };
+		DAEAD23F2594DAFE00F6A938 /* Homework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA200F5A259154DE00AB043D /* Homework.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +150,7 @@
 		DA5BCAAA2592B0C500353F59 /* CoursDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursDetail.swift; sourceTree = "<group>"; };
 		DA5BCAB92592B1A200353F59 /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 		DA5BCAC42592B32900353F59 /* CategoriesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRow.swift; sourceTree = "<group>"; };
+		DA84D6642597445600D61722 /* HomeworkWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkWidgetView.swift; sourceTree = "<group>"; };
 		DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeworkWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC579262594CE8F00F9BFB6 /* HomeworkWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkWidget.swift; sourceTree = "<group>"; };
 		DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HomeworkWidget.intentdefinition; sourceTree = "<group>"; };
@@ -324,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC579262594CE8F00F9BFB6 /* HomeworkWidget.swift */,
+				DA84D6642597445600D61722 /* HomeworkWidgetView.swift */,
 				DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */,
 				DA28E4D62594CF08008725D7 /* HomeworkWidgetExtension.entitlements */,
 				DAC579292594CE9100F9BFB6 /* Assets.xcassets */,
@@ -587,8 +594,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA84D6652597445600D61722 /* HomeworkWidgetView.swift in Sources */,
+				DAEAD2372594DAFC00F6A938 /* CoreDataStack.swift in Sources */,
 				DAC5792C2594CE9100F9BFB6 /* HomeworkWidget.intentdefinition in Sources */,
+				DAEAD2382594DAFC00F6A938 /* Cours.swift in Sources */,
+				DAEAD23F2594DAFE00F6A938 /* Homework.xcdatamodeld in Sources */,
 				DAC579272594CE8F00F9BFB6 /* HomeworkWidget.swift in Sources */,
+				DAEAD2392594DAFC00F6A938 /* Taches.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

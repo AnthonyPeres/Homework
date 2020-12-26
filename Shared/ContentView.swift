@@ -60,8 +60,16 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
             }
-//            .navigationBarItems(trailing: EditButton())
-            .navigationBarTitle("Mes cours", displayMode: .large)
+            .navigationBarTitle("Mes cours")
+            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+                
+                //Peut être mettre les deux boutons d'ajout ici
+            }
+            
         }
         #elseif os(OSX)
         NavigationView {

@@ -37,6 +37,7 @@ struct CategoriesList: View {
         
         .listStyle(style())
         .frame(height: size)
+//        .navigationBarHidden(true)
     }
     
     private var size: CGFloat {

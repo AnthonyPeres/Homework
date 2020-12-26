@@ -27,11 +27,6 @@ struct CoursList: View {
             }
         }
         .listStyle(PlainListStyle())
-        .toolbar(content: {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
-            }
-        })
         
         
         
