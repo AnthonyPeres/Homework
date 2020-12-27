@@ -21,7 +21,6 @@ class CoursViewModel: ObservableObject {
             
             // Widget kit
             WidgetCenter.shared.reloadAllTimelines()
-            
             clear()
         } else {
             let newData = Cours(context: context)

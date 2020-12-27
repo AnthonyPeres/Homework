@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public class Cours: NSManagedObject, Identifiable {
+public class Cours: NSManagedObject {
     @NSManaged public var intitule: String?
     @NSManaged public var taches: NSSet?
     
@@ -31,6 +31,12 @@ extension Cours {
         let request = Cours.fetchRequest() as! NSFetchRequest<Cours>
         request.sortDescriptors = [NSSortDescriptor(key: "intitule", ascending: true)] 
         return request
+    }
+}
+
+extension Cours: Identifiable {
+    public var id: String {
+        wrappedIntitule
     }
 }
 

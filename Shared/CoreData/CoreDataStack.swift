@@ -20,6 +20,7 @@ struct CoreDataStack {
     static let shared = CoreDataStack()
     
     init(inMemory: Bool = false) {
+        
         container = NSPersistentContainer(name: "Homework")
         
         if inMemory {
