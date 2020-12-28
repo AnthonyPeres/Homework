@@ -11,6 +11,7 @@ import CoreData
 
 
 struct HomeworkWidgetView : View {
+    
     @Environment(\.managedObjectContext) private var context
     @Environment(\.widgetFamily) var widgetFamily
     var cour: Cours
@@ -33,25 +34,33 @@ struct HomeworkWidgetPlaceholderView: View {
 }
 
 struct HomeworkSmallView: View {
-    var cour: Cours
+    
     @Environment(\.managedObjectContext) private var context
+    var cour: Cours
+    
     var body: some View {
-        Text("Cour selectionné : \(cour.wrappedIntitule).")
-        TachesList(cour: cour, nbTaches: 3)
+        VStack {
+            Text("Cour selectionné : \(cour.wrappedIntitule).")
+            TachesList(cour: cour, nbTaches: 3)
+        }
     }
 }
 
 struct HomeworkMediumView: View {
-    var cour: Cours
+    
     @Environment(\.managedObjectContext) private var context
+    var cour: Cours
+    
     var body: some View {
         Text("Cour selectionné : \(cour.wrappedIntitule).")
     }
 }
 
 struct HomeworkLargeView: View {
-    var cour: Cours
+    
     @Environment(\.managedObjectContext) private var context
+    var cour: Cours
+    
     var body: some View {
         Text("Cour selectionné : \(cour.wrappedIntitule).")
     }
@@ -63,11 +72,25 @@ struct HomeworkWidgetView_Previews: PreviewProvider {
         let cour = Cours(context: context)
         cour.intitule = "SwiftUI"
         
+        let tache = Taches(context: context)
+        tache.intitule = "Tache1"
+        
+        cour.addToTaches(tache)
+        
         try? context.save()
         
         return Group {
             HomeworkWidgetView(cour: cour)
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
+                .environment(\.managedObjectContext, context)
+            
+            HomeworkWidgetView(cour: cour)
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+                .environment(\.managedObjectContext, context)
+            
+            HomeworkWidgetView(cour: cour)
+                .previewContext(WidgetPreviewContext(family: .systemLarge))
+                .environment(\.managedObjectContext, context)
             
         }
     }

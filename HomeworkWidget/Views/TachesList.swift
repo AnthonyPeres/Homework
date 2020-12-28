@@ -41,10 +41,18 @@ struct TachesList: View {
 struct TachesList_Previews: PreviewProvider {
     static var previews: some View {
         let context = CoreDataStack.preview.container.viewContext
-        let newCours = Cours(context: context)
-        newCours.intitule = "SwiftUI"
+        let cour = Cours(context: context)
+        cour.intitule = "SwiftUI"
         
-        return TachesList(cour: newCours, nbTaches: 3)
+        let tache = Taches(context: context)
+        tache.intitule = "Tache1"
+        
+        cour.addToTaches(tache)
+        
+        try? context.save()
+        
+        return TachesList(cour: cour, nbTaches: 3)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .environment(\.managedObjectContext, context)
     }
 }

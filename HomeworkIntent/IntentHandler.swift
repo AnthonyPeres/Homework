@@ -25,16 +25,16 @@ class IntentHandler: INExtension, SelectCourIntentHandling {
     ) {
         var courItems = [CourINO]()
         
-                let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
-                fetchRequest.entity = Cours.entity()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
+        fetchRequest.entity = Cours.entity()
         
-                let cours = try! context.fetch(fetchRequest) as! [Cours]
-                if !cours.isEmpty {
-                    for cour in cours {
-                        let courINO = CourINO(identifier: cour.id, display: cour.wrappedIntitule)
-                        courItems.append(courINO)
-                    }
-                }
+        let cours = try! context.fetch(fetchRequest) as! [Cours]
+        if !cours.isEmpty {
+            for cour in cours {
+                let courINO = CourINO(identifier: cour.id, display: cour.wrappedIntitule)
+                courItems.append(courINO)
+            }
+        }
         
         completion(INObjectCollection(items: courItems), nil)
     }

@@ -257,6 +257,7 @@
 				DA200FD425915CAE00AB043D /* ViewModel */,
 				DA200FB4259155D500AB043D /* CoreData */,
 				DA200FB3259155D100AB043D /* Model */,
+				DAE81A3C25995D990079D813 /* Intents */,
 				DA200F5C259154DE00AB043D /* HomeworkApp.swift */,
 				DA200FEA2591641B00AB043D /* ContentView.swift */,
 				DA200F5F259154DF00AB043D /* Assets.xcassets */,
@@ -389,9 +390,8 @@
 				DA84D70A2597505900D61722 /* HomeworkWidgetBundle.swift */,
 				DA84D7192597507600D61722 /* Widgets */,
 				DA84D7122597506100D61722 /* Views */,
-				DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */,
-				DA28E4D62594CF08008725D7 /* HomeworkWidgetExtension.entitlements */,
 				DAC579292594CE9100F9BFB6 /* Assets.xcassets */,
+				DA28E4D62594CF08008725D7 /* HomeworkWidgetExtension.entitlements */,
 				DAC5792B2594CE9100F9BFB6 /* Info.plist */,
 			);
 			path = HomeworkWidget;
@@ -400,11 +400,19 @@
 		DAE819722598EFFC0079D813 /* HomeworkIntent */ = {
 			isa = PBXGroup;
 			children = (
-				DAE819AD2598F0DB0079D813 /* HomeworkIntent.entitlements */,
 				DAE819732598EFFC0079D813 /* IntentHandler.swift */,
+				DAE819AD2598F0DB0079D813 /* HomeworkIntent.entitlements */,
 				DAE819752598EFFC0079D813 /* Info.plist */,
 			);
 			path = HomeworkIntent;
+			sourceTree = "<group>";
+		};
+		DAE81A3C25995D990079D813 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */,
+			);
+			path = Intents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

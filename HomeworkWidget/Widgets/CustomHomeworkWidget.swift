@@ -38,7 +38,7 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
             return
         }
         
-        let cour = lookupCourDetail(for: configuration)
+        let cour = lookupCour(for: configuration)
         let entry = CustomCourEntry(date: Date(), cour: cour)
         completion(entry)
     }
@@ -50,7 +50,7 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
         completion: @escaping (Timeline<CustomCourEntry>) -> Void
     ) {
         var entries = [CustomCourEntry]()
-        let cour = lookupCourDetail(for: configuration)
+        let cour = lookupCour(for: configuration)
         let entry = CustomCourEntry(date: Date(), cour: cour)
         entries.append(entry)
         let timeline = Timeline(entries: entries, policy: .never)
@@ -58,11 +58,11 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
     }
     
     ///
-    private func lookupCourDetail(for configuration: SelectCourIntent) -> Cours {
+    private func lookupCour(for configuration: SelectCourIntent) -> Cours {
         let context = CoreDataStack.shared.container.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
         fetchRequest.entity = Cours.entity()
-
+        
         let cours = try! context.fetch(fetchRequest) as! [Cours]
         
         guard let courId = configuration.cour?.identifier,
@@ -95,7 +95,7 @@ struct CustomHomeworkEntryView: View {
 
 ///
 struct CustomHomeworkWidget: Widget {
-
+    
     /// Le context
     let context = CoreDataStack.shared.container.viewContext
     
@@ -103,7 +103,7 @@ struct CustomHomeworkWidget: Widget {
     let kind: String = "HomeworkWidget"
     
     var body: some WidgetConfiguration {
-    
+        
         /// Intention personnalisée : Une intention personnalisée qui définit les propriétés configurables par l'utilisateur
         IntentConfiguration(
             kind: kind,
