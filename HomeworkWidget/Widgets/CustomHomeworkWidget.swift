@@ -85,6 +85,7 @@ struct CustomCourEntry: TimelineEntry {
 
 ///
 struct CustomHomeworkEntryView: View {
+    @Environment(\.managedObjectContext) private var context
     var entry: CustomHomeworkWidgetProvider.Entry
     
     var body: some View {

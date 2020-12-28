@@ -9,7 +9,8 @@ import SwiftUI
 import WidgetKit
 
 struct TachesList: View {
-    let context = CoreDataStack.shared.container.viewContext
+    @Environment(\.managedObjectContext) private var context
+    
     var cour: Cours?
     var fetchRequest: FetchRequest<Taches>
     var taches: FetchedResults<Taches> {
@@ -28,12 +29,8 @@ struct TachesList: View {
             if taches.isEmpty {
                 Text("Aucune tâche")
             } else {
-                ForEach(0..<nombreTaches) { i in
-                    if taches.count >= i {
-                        Text(taches[i].wrappedIntitule)
-                    } else {
-                        Text("")
-                    }
+                ForEach(taches) { tache in
+                    Text(tache.wrappedIntitule)
                 }
             }
             

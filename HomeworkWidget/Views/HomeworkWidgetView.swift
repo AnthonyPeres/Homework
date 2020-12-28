@@ -11,7 +11,7 @@ import CoreData
 
 
 struct HomeworkWidgetView : View {
-    
+    @Environment(\.managedObjectContext) private var context
     @Environment(\.widgetFamily) var widgetFamily
     var cour: Cours
     
@@ -34,15 +34,16 @@ struct HomeworkWidgetPlaceholderView: View {
 
 struct HomeworkSmallView: View {
     var cour: Cours
-    
+    @Environment(\.managedObjectContext) private var context
     var body: some View {
         Text("Cour selectionné : \(cour.wrappedIntitule).")
+        TachesList(cour: cour, nbTaches: 3)
     }
 }
 
 struct HomeworkMediumView: View {
     var cour: Cours
-    
+    @Environment(\.managedObjectContext) private var context
     var body: some View {
         Text("Cour selectionné : \(cour.wrappedIntitule).")
     }
@@ -50,7 +51,7 @@ struct HomeworkMediumView: View {
 
 struct HomeworkLargeView: View {
     var cour: Cours
-    
+    @Environment(\.managedObjectContext) private var context
     var body: some View {
         Text("Cour selectionné : \(cour.wrappedIntitule).")
     }
