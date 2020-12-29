@@ -16,7 +16,7 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
     typealias Entry = CustomCourEntry
     typealias Intent = SelectCourIntent
     
-    ///
+    /// placeholder function is used by the system to generate a template view in the widget gallery. You can provide mock data here that will look nice in the gallery.
     func placeholder(in context: Context) -> CustomCourEntry {
         let context = CoreDataStack.preview.container.viewContext
         let cour = Cours(context: context)
@@ -24,7 +24,7 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
         return CustomCourEntry(date: Date(), cour: cour)
     }
     
-    ///
+    /// fourni rapidement un timelineEntry (ici : CustomCourEntry) pour présenter une vue de widget utilisée dans des situations transitoires, par exemple, dans la galerie de widgets.
     func getSnapshot(
         for configuration: SelectCourIntent,
         in context: Context,
@@ -43,7 +43,8 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
         completion(entry)
     }
     
-    ///
+    /// Fourni un tableau d'entry, un pour l'instant présent et d'autres pour les temps futurs en fonction de l'intervalle de mise à jour du widget.
+    /// Exemple mise à jour du widget toutes les heures.
     func getTimeline(
         for configuration: SelectCourIntent,
         in context: Context,
@@ -58,12 +59,17 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
     }
     
     ///
-    private func lookupCour(for configuration: SelectCourIntent) -> Cours {
+    private func lookupCour(for configuration: SelectCourIntent) -> Cours? {
         let context = CoreDataStack.shared.container.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
         fetchRequest.entity = Cours.entity()
         
         let cours = try! context.fetch(fetchRequest) as! [Cours]
+        
+        if cours.isEmpty {
+            return nil
+        }
+        
         
         guard let courId = configuration.cour?.identifier,
               let courForConfig = cours.first(where: { cour in
@@ -77,10 +83,10 @@ struct CustomHomeworkWidgetProvider: IntentTimelineProvider {
 }
 
 
-///
+/// Données du widget (peut être mises à jour en fonction du cas d'utilisation de l'application)
 struct CustomCourEntry: TimelineEntry {
     let date: Date
-    let cour: Cours
+    let cour: Cours?
 }
 
 ///
@@ -99,7 +105,7 @@ struct CustomHomeworkWidget: Widget {
     /// Le context
     let context = CoreDataStack.shared.container.viewContext
     
-    /// Identifiant unique qui représente le widget
+    /// Kind est une chaîne qui identifie le type de widget. Votre application peut avoir plusieurs widgets. Dans ce cas, un identifiant de genre vous permet de mettre à jour des widgets d'un type particulier
     let kind: String = "HomeworkWidget"
     
     var body: some WidgetConfiguration {
@@ -108,7 +114,7 @@ struct CustomHomeworkWidget: Widget {
         IntentConfiguration(
             kind: kind,
             intent: SelectCourIntent.self,
-            provider: CustomHomeworkWidgetProvider()
+            provider: CustomHomeworkWidgetProvider() // récupérer les données du widget.
         ) { entry in
             CustomHomeworkEntryView(entry: entry)
                 .environment(\.managedObjectContext, context)

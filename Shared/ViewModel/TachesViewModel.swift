@@ -8,6 +8,7 @@
 import Foundation
 import CoreData
 import SwiftUI
+import WidgetKit
 
 class TachesViewModel: ObservableObject {
     @Published var intitule = ""
@@ -34,7 +35,11 @@ class TachesViewModel: ObservableObject {
             updateData!.termine = termine
             updateData!.date = date
             updateData!.cour = cour
+            
+            
             try! context.save()
+            WidgetCenter.shared.reloadAllTimelines()
+            
             clear()
         } else {
             let newData = Taches(context: context)
@@ -46,6 +51,7 @@ class TachesViewModel: ObservableObject {
             if addCour { newData.cour = cour }
             do {
                 try context.save()
+                WidgetCenter.shared.reloadAllTimelines()
                 clear()
             } catch {
                 print(error.localizedDescription)
