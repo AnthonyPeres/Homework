@@ -7,17 +7,22 @@
 		<key>Homework (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Homework (macOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Homework Intent.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>HomeworkIntent.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 		<key>HomeworkMacOSWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
@@ -27,12 +32,27 @@
 		<key>HomeworkMacWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>HomeworkWatchOS (Complication).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>HomeworkWatchOS (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>HomeworkWatchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
 		<key>HomeworkWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>watchOS (Complication).xcscheme_^#shared#^_</key>
 		<dict>
@@ -68,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>DAC579212594CE8F00F9BFB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAE8196F2598EFFC0079D813</key>
 		<dict>
 			<key>primary</key>
 			<true/>

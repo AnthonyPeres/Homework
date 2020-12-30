@@ -12,9 +12,6 @@
 		DA110547259A7FA8009671EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA110546259A7FA8009671EA /* Assets.xcassets */; };
 		DA11054E259A7FA8009671EA /* HomeworkMacWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA11053F259A7FA6009671EA /* HomeworkMacWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA110568259A808B009671EA /* HomeworkWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA110567259A808B009671EA /* HomeworkWidgetBundle.swift */; };
-		DA11057F259A80B1009671EA /* CustomHomeworkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC579262594CE8F00F9BFB6 /* CustomHomeworkWidget.swift */; };
-		DA110587259A80B7009671EA /* TachesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE81A2B25992C6F0079D813 /* TachesList.swift */; };
-		DA110588259A80B7009671EA /* HomeworkWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84D7202597513B00D61722 /* HomeworkWidgetView.swift */; };
 		DA110590259A80C4009671EA /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */; };
 		DA11059F259A80D7009671EA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FA6259155A300AB043D /* CoreDataStack.swift */; };
 		DA1105A0259A80D7009671EA /* Taches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FB5259155E100AB043D /* Taches.swift */; };
@@ -44,6 +41,20 @@
 		DA200FE125915DFF00AB043D /* CoursForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FDF25915DFF00AB043D /* CoursForm.swift */; };
 		DA200FEB2591641B00AB043D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FEA2591641B00AB043D /* ContentView.swift */; };
 		DA200FEC2591641B00AB043D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FEA2591641B00AB043D /* ContentView.swift */; };
+		DA34E1AF259C907C0013DCCB /* CustomHomeworkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34E1AE259C907C0013DCCB /* CustomHomeworkWidget.swift */; };
+		DA34E1BE259C909A0013DCCB /* HomeworkWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84D7202597513B00D61722 /* HomeworkWidgetView.swift */; };
+		DA34E1BF259C909C0013DCCB /* TachesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE81A2B25992C6F0079D813 /* TachesList.swift */; };
+		DA34E1C7259C91360013DCCB /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC579282594CE8F00F9BFB6 /* HomeworkWidget.intentdefinition */; };
+		DA34E1D4259C918D0013DCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA34E1D3259C918D0013DCCB /* Assets.xcassets */; };
+		DA34E1DB259C918D0013DCCB /* HomeworkWatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA34E1DA259C918D0013DCCB /* HomeworkWatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA34E1E0259C918D0013DCCB /* HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34E1DF259C918D0013DCCB /* HomeworkApp.swift */; };
+		DA34E1E2259C918D0013DCCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34E1E1259C918D0013DCCB /* ContentView.swift */; };
+		DA34E1E4259C918D0013DCCB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34E1E3259C918D0013DCCB /* NotificationController.swift */; };
+		DA34E1E6259C918D0013DCCB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34E1E5259C918D0013DCCB /* NotificationView.swift */; };
+		DA34E1E8259C918D0013DCCB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA34E1E7259C918D0013DCCB /* ComplicationController.swift */; };
+		DA34E1EA259C918E0013DCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA34E1E9259C918E0013DCCB /* Assets.xcassets */; };
+		DA34E1ED259C918E0013DCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA34E1EC259C918E0013DCCB /* Preview Assets.xcassets */; };
+		DA34E1F2259C918E0013DCCB /* HomeworkWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA34E1D1259C918C0013DCCB /* HomeworkWatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA5BCA862592A85500353F59 /* TachesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCA852592A85500353F59 /* TachesRow.swift */; };
 		DA5BCA872592A85500353F59 /* TachesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCA852592A85500353F59 /* TachesRow.swift */; };
 		DA5BCA8D2592A9B600353F59 /* TachesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCA8C2592A9B600353F59 /* TachesForm.swift */; };
@@ -60,6 +71,9 @@
 		DA5BCAC62592B32900353F59 /* CategoriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5BCAC42592B32900353F59 /* CategoriesRow.swift */; };
 		DA84D70B2597505900D61722 /* HomeworkWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84D70A2597505900D61722 /* HomeworkWidgetBundle.swift */; };
 		DA84D7212597513B00D61722 /* HomeworkWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84D7202597513B00D61722 /* HomeworkWidgetView.swift */; };
+		DA99F2B3259CC86E00BCB56C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FA6259155A300AB043D /* CoreDataStack.swift */; };
+		DA99F2B4259CC86E00BCB56C /* Taches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FB5259155E100AB043D /* Taches.swift */; };
+		DA99F2B5259CC86E00BCB56C /* Cours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA200FB6259155E100AB043D /* Cours.swift */; };
 		DAC579232594CE8F00F9BFB6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3CC2802594B91300A23B34 /* WidgetKit.framework */; };
 		DAC579242594CE8F00F9BFB6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3CC2822594B91300A23B34 /* SwiftUI.framework */; };
 		DAC579272594CE8F00F9BFB6 /* CustomHomeworkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC579262594CE8F00F9BFB6 /* CustomHomeworkWidget.swift */; };
@@ -106,6 +120,20 @@
 			remoteGlobalIDString = DA200F6B259154DF00AB043D;
 			remoteInfo = "Homework (macOS)";
 		};
+		DA34E1DC259C918D0013DCCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA200F55259154DE00AB043D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA34E1D9259C918D0013DCCB;
+			remoteInfo = "HomeworkWatchOS Extension";
+		};
+		DA34E1F0259C918E0013DCCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA200F55259154DE00AB043D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA34E1D0259C918C0013DCCB;
+			remoteInfo = HomeworkWatchOS;
+		};
 		DAC5792E2594CE9100F9BFB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA200F55259154DE00AB043D /* Project object */;
@@ -123,6 +151,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DA34E1F6259C918E0013DCCB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA34E1DB259C918D0013DCCB /* HomeworkWatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA3CC2902594B91400A23B34 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +191,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				DA34E1F2259C918E0013DCCB /* HomeworkWatchOS.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +227,20 @@
 		DA200FDF25915DFF00AB043D /* CoursForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursForm.swift; sourceTree = "<group>"; };
 		DA200FEA2591641B00AB043D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA28E4D62594CF08008725D7 /* HomeworkWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeworkWidgetExtension.entitlements; sourceTree = "<group>"; };
+		DA34E1AE259C907C0013DCCB /* CustomHomeworkWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeworkWidget.swift; sourceTree = "<group>"; };
+		DA34E1D1259C918C0013DCCB /* HomeworkWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeworkWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA34E1D3259C918D0013DCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA34E1D5259C918D0013DCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA34E1DA259C918D0013DCCB /* HomeworkWatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HomeworkWatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA34E1DF259C918D0013DCCB /* HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkApp.swift; sourceTree = "<group>"; };
+		DA34E1E1259C918D0013DCCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA34E1E3259C918D0013DCCB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DA34E1E5259C918D0013DCCB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		DA34E1E7259C918D0013DCCB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		DA34E1E9259C918E0013DCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA34E1EC259C918E0013DCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA34E1EE259C918E0013DCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA34E1EF259C918E0013DCCB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		DA3CC2802594B91300A23B34 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		DA3CC2822594B91300A23B34 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		DA5BCA852592A85500353F59 /* TachesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachesRow.swift; sourceTree = "<group>"; };
@@ -250,6 +304,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA34E1D7259C918D0013DCCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAC5791F2594CE8F00F9BFB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				DA110567259A808B009671EA /* HomeworkWidgetBundle.swift */,
+				DA34E1AD259C90640013DCCB /* Widgets */,
 				DA110546259A7FA8009671EA /* Assets.xcassets */,
 				DA110548259A7FA8009671EA /* Info.plist */,
 				DA110549259A7FA8009671EA /* HomeworkMacWidget.entitlements */,
@@ -292,6 +354,8 @@
 				DAC579252594CE8F00F9BFB6 /* HomeworkWidget */,
 				DA110542259A7FA6009671EA /* HomeworkMacWidget */,
 				DAE819722598EFFC0079D813 /* HomeworkIntent */,
+				DA34E1D2259C918C0013DCCB /* HomeworkWatchOS */,
+				DA34E1DE259C918D0013DCCB /* HomeworkWatchOS Extension */,
 				DA3CC27F2594B91300A23B34 /* Frameworks */,
 				DA200F65259154DF00AB043D /* Products */,
 			);
@@ -322,6 +386,8 @@
 				DAC579222594CE8F00F9BFB6 /* HomeworkWidgetExtension.appex */,
 				DAE819702598EFFC0079D813 /* HomeworkIntent.appex */,
 				DA11053F259A7FA6009671EA /* HomeworkMacWidgetExtension.appex */,
+				DA34E1D1259C918C0013DCCB /* HomeworkWatchOS.app */,
+				DA34E1DA259C918D0013DCCB /* HomeworkWatchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -404,6 +470,48 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DA34E1AD259C90640013DCCB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				DA34E1AE259C907C0013DCCB /* CustomHomeworkWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		DA34E1D2259C918C0013DCCB /* HomeworkWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA34E1D3259C918D0013DCCB /* Assets.xcassets */,
+				DA34E1D5259C918D0013DCCB /* Info.plist */,
+			);
+			path = HomeworkWatchOS;
+			sourceTree = "<group>";
+		};
+		DA34E1DE259C918D0013DCCB /* HomeworkWatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA99F29D259CC84C00BCB56C /* Views */,
+				DA34E1DF259C918D0013DCCB /* HomeworkApp.swift */,
+				DA34E1E1259C918D0013DCCB /* ContentView.swift */,
+				DA34E1E3259C918D0013DCCB /* NotificationController.swift */,
+				DA34E1E5259C918D0013DCCB /* NotificationView.swift */,
+				DA34E1E7259C918D0013DCCB /* ComplicationController.swift */,
+				DA34E1E9259C918E0013DCCB /* Assets.xcassets */,
+				DA34E1EE259C918E0013DCCB /* Info.plist */,
+				DA34E1EF259C918E0013DCCB /* PushNotificationPayload.apns */,
+				DA34E1EB259C918E0013DCCB /* Preview Content */,
+			);
+			path = "HomeworkWatchOS Extension";
+			sourceTree = "<group>";
+		};
+		DA34E1EB259C918E0013DCCB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA34E1EC259C918E0013DCCB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		DA3CC27F2594B91300A23B34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +538,13 @@
 				DAC579262594CE8F00F9BFB6 /* CustomHomeworkWidget.swift */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		DA99F29D259CC84C00BCB56C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DAC579252594CE8F00F9BFB6 /* HomeworkWidget */ = {
@@ -498,6 +613,7 @@
 			dependencies = (
 				DAC5792F2594CE9100F9BFB6 /* PBXTargetDependency */,
 				DAE819772598EFFC0079D813 /* PBXTargetDependency */,
+				DA34E1F1259C918E0013DCCB /* PBXTargetDependency */,
 			);
 			name = "Homework (iOS)";
 			productName = "Homework (iOS)";
@@ -559,6 +675,40 @@
 			productReference = DA200F7F259154DF00AB043D /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DA34E1D0259C918C0013DCCB /* HomeworkWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA34E1F7259C918E0013DCCB /* Build configuration list for PBXNativeTarget "HomeworkWatchOS" */;
+			buildPhases = (
+				DA34E1CF259C918C0013DCCB /* Resources */,
+				DA34E1F6259C918E0013DCCB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA34E1DD259C918D0013DCCB /* PBXTargetDependency */,
+			);
+			name = HomeworkWatchOS;
+			productName = HomeworkWatchOS;
+			productReference = DA34E1D1259C918C0013DCCB /* HomeworkWatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DA34E1D9259C918D0013DCCB /* HomeworkWatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA34E1F3259C918E0013DCCB /* Build configuration list for PBXNativeTarget "HomeworkWatchOS Extension" */;
+			buildPhases = (
+				DA34E1D6259C918D0013DCCB /* Sources */,
+				DA34E1D7259C918D0013DCCB /* Frameworks */,
+				DA34E1D8259C918D0013DCCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HomeworkWatchOS Extension";
+			productName = "HomeworkWatchOS Extension";
+			productReference = DA34E1DA259C918D0013DCCB /* HomeworkWatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		DAC579212594CE8F00F9BFB6 /* HomeworkWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC579332594CE9100F9BFB6 /* Build configuration list for PBXNativeTarget "HomeworkWidgetExtension" */;
@@ -619,6 +769,12 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = DA200F6B259154DF00AB043D;
 					};
+					DA34E1D0259C918C0013DCCB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DA34E1D9259C918D0013DCCB = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					DAC579212594CE8F00F9BFB6 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -647,6 +803,8 @@
 				DAC579212594CE8F00F9BFB6 /* HomeworkWidgetExtension */,
 				DAE8196F2598EFFC0079D813 /* HomeworkIntent */,
 				DA11053E259A7FA6009671EA /* HomeworkMacWidgetExtension */,
+				DA34E1D0259C918C0013DCCB /* HomeworkWatchOS */,
+				DA34E1D9259C918D0013DCCB /* HomeworkWatchOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -690,6 +848,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA34E1CF259C918C0013DCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA34E1D4259C918D0013DCCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA34E1D8259C918D0013DCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA34E1ED259C918E0013DCCB /* Preview Assets.xcassets in Resources */,
+				DA34E1EA259C918E0013DCCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAC579202594CE8F00F9BFB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -712,15 +887,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA34E1AF259C907C0013DCCB /* CustomHomeworkWidget.swift in Sources */,
 				DA1105A9259A80DA009671EA /* Homework.xcdatamodeld in Sources */,
-				DA11057F259A80B1009671EA /* CustomHomeworkWidget.swift in Sources */,
 				DA110568259A808B009671EA /* HomeworkWidgetBundle.swift in Sources */,
 				DA1105A1259A80D7009671EA /* Cours.swift in Sources */,
 				DA1105A0259A80D7009671EA /* Taches.swift in Sources */,
-				DA110588259A80B7009671EA /* HomeworkWidgetView.swift in Sources */,
 				DA11059F259A80D7009671EA /* CoreDataStack.swift in Sources */,
+				DA34E1BE259C909A0013DCCB /* HomeworkWidgetView.swift in Sources */,
 				DA110590259A80C4009671EA /* HomeworkWidget.intentdefinition in Sources */,
-				DA110587259A80B7009671EA /* TachesList.swift in Sources */,
+				DA34E1BF259C909C0013DCCB /* TachesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +944,7 @@
 				DA5BCAC62592B32900353F59 /* CategoriesRow.swift in Sources */,
 				DA200FD825915CC200AB043D /* CoursViewModel.swift in Sources */,
 				DA5BCA8E2592A9B600353F59 /* TachesForm.swift in Sources */,
+				DA34E1C7259C91360013DCCB /* HomeworkWidget.intentdefinition in Sources */,
 				DA5BCAAC2592B0C500353F59 /* CoursDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -786,6 +962,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA200F84259154DF00AB043D /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA34E1D6259C918D0013DCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA34E1E4259C918D0013DCCB /* NotificationController.swift in Sources */,
+				DA34E1E2259C918D0013DCCB /* ContentView.swift in Sources */,
+				DA34E1E8259C918D0013DCCB /* ComplicationController.swift in Sources */,
+				DA99F2B3259CC86E00BCB56C /* CoreDataStack.swift in Sources */,
+				DA34E1E0259C918D0013DCCB /* HomeworkApp.swift in Sources */,
+				DA34E1E6259C918D0013DCCB /* NotificationView.swift in Sources */,
+				DA99F2B4259CC86E00BCB56C /* Taches.swift in Sources */,
+				DA99F2B5259CC86E00BCB56C /* Cours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +1028,16 @@
 			isa = PBXTargetDependency;
 			target = DA200F6B259154DF00AB043D /* Homework (macOS) */;
 			targetProxy = DA200F80259154DF00AB043D /* PBXContainerItemProxy */;
+		};
+		DA34E1DD259C918D0013DCCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA34E1D9259C918D0013DCCB /* HomeworkWatchOS Extension */;
+			targetProxy = DA34E1DC259C918D0013DCCB /* PBXContainerItemProxy */;
+		};
+		DA34E1F1259C918E0013DCCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA34E1D0259C918C0013DCCB /* HomeworkWatchOS */;
+			targetProxy = DA34E1F0259C918E0013DCCB /* PBXContainerItemProxy */;
 		};
 		DAC5792F2594CE9100F9BFB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1204,6 +1405,96 @@
 			};
 			name = Release;
 		};
+		DA34E1F4259C918E0013DCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeworkWatchOS Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 67RY5Y2X43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeworkWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.PeresdaCruz.Homework.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		DA34E1F5259C918E0013DCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeworkWatchOS Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 67RY5Y2X43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeworkWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.PeresdaCruz.Homework.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		DA34E1F8259C918E0013DCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67RY5Y2X43;
+				IBSC_MODULE = HomeworkWatchOS_Extension;
+				INFOPLIST_FILE = HomeworkWatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.PeresdaCruz.Homework.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		DA34E1F9259C918E0013DCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67RY5Y2X43;
+				IBSC_MODULE = HomeworkWatchOS_Extension;
+				INFOPLIST_FILE = HomeworkWatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.PeresdaCruz.Homework.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		DAC579312594CE9100F9BFB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1351,6 +1642,24 @@
 			buildConfigurations = (
 				DA200F9C259154DF00AB043D /* Debug */,
 				DA200F9D259154DF00AB043D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA34E1F3259C918E0013DCCB /* Build configuration list for PBXNativeTarget "HomeworkWatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA34E1F4259C918E0013DCCB /* Debug */,
+				DA34E1F5259C918E0013DCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA34E1F7259C918E0013DCCB /* Build configuration list for PBXNativeTarget "HomeworkWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA34E1F8259C918E0013DCCB /* Debug */,
+				DA34E1F9259C918E0013DCCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -106,7 +106,7 @@ struct CustomHomeworkWidget: Widget {
     let context = CoreDataStack.shared.container.viewContext
     
     /// Kind est une chaîne qui identifie le type de widget. Votre application peut avoir plusieurs widgets. Dans ce cas, un identifiant de genre vous permet de mettre à jour des widgets d'un type particulier
-    let kind: String = "HomeworkWidget"
+    let kind: String = "HomeworkMacWidget"
     
     var body: some WidgetConfiguration {
         
